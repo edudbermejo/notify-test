@@ -1,2 +1,3 @@
-# notify-test
-Notify, a technical test to showcase your app
+# Notify-test
+
+A great new frew psd theme to showcase your new application.
