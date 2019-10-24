@@ -1,8 +1,9 @@
 body,
 html {
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
   --main-color: hsl(145, 64%, 49%);
-  --secondary-text-color: hsl(0, 0%, 73%);
+  --secondary-text-color: hsl(0, 0%, 60%);
 }
 
 .notify-introduction {
@@ -64,12 +65,53 @@ html {
   height: 2em;
 }
 
-.notify-bullet-title {
-  font-weight: bold;
-}
-
 .notify-bullet-description {
   font-size: 0.8em;
   text-align: center;
   color: var(--secondary-text-color);
+}
+
+.notify-notifications {
+  background-color: hsl(0, 0%, 89%);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notification-offer {
+  padding: 2em;
+}
+
+.notification-offer-text {
+  color: var(--secondary-text-color);
+}
+
+.email-input {
+  margin-top: 1.5em;
+}
+
+.email-input input{
+  padding: 0.5em;
+  border-radius: 0.5em 0 0 0.5em;
+  border: 1px solid var(--secondary-text-color);
+  font-size: 1em;
+  padding: 0.5em 1em;
+  outline: none;
+}
+
+.email-input button{
+  background-color: var(--main-color);
+  color: white;
+  margin-left: -1em;
+  border-radius: 0 0.5em 0.5em 0;
+  font-size: 1em;
+  padding: 0.55em 1em;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.notify-video {
+  padding: 2em 1em;
 }
