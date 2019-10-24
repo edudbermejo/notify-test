@@ -2,19 +2,23 @@ body,
 html {
   margin: 0;
   --main-color: hsl(145, 64%, 49%);
+  --secondary-text-color: hsl(0, 0%, 73%);
 }
 
-.notify-description {
+.notify-introduction {
   background: url('assets/header-background.png');
   color: white;
+  padding: 1.5em 2.5em;
 }
 
 .notify-logo {
   display: block;
+  width: 8em;
 }
 
-.notify-description span {
+.notify-introduction span {
   display: block;
+  margin: 0.5em 0 1em;
 }
 
 .external-download-button {
@@ -22,6 +26,7 @@ html {
   background-color: hsla(0, 0%, 35%, 0.753);
   display: inline-block;
   padding: 0.5em;
+  margin: 0 0.5em 0 0;
 }
 
 .external-download-button img {
@@ -31,4 +36,40 @@ html {
 
 .external-download-button:hover {
   background-color: var(--main-color);
+}
+
+.notify-bullets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notify-bullet {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notify-bullet-title,
+.notify-bullet-description,
+.notify-bullet .icon {
+  margin: 0.5em;
+}
+
+.notify-bullet .icon {
+  background-color: var(--main-color);
+  padding: 1em;
+  border-radius: 50%;
+  height: 2em;
+}
+
+.notify-bullet-title {
+  font-weight: bold;
+}
+
+.notify-bullet-description {
+  font-size: 0.8em;
+  text-align: center;
+  color: var(--secondary-text-color);
 }
