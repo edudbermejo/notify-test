@@ -20,11 +20,12 @@ html {
   background-size: cover;
   display: flex;
   align-items: center;
-  height: 15em;
+  height: 20em;
 }
 
 .notify-introduction {
   padding: 1.5em 2.5em;
+  font-size: 1.3em;
 }
 
 .notify-logo {
@@ -38,13 +39,20 @@ html {
   margin: 0.5em 0 1em;
 }
 
+.external-download-buttons-container {
+  display: flex;
+}
+
 .external-download-button {
   border-radius: 50%;
   background-color: hsla(0, 0%, 35%, 0.753);
-  display: inline-block;
-  padding: 0.5em;
-  margin: 0 0.5em 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5em;
   opacity: 0.8;
+  width: 3em;
+  height: 3em;
 }
 
 .external-download-button img {
