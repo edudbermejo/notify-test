@@ -188,6 +188,19 @@ h2 {
   max-width: 50em;
 }
 
+.contacts-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+}
+
+.contacts-list img{
+  width: 3em;
+  margin: 0.1em;
+}
+
 .notify-contact h2 {
   margin-bottom: 0;
 }
@@ -195,6 +208,26 @@ h2 {
 .notify-contact .contact-description-quote-author {
   color: black;
   padding-top: 0;
+}
+
+.social-media-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.social-media-icon {
+  padding: 0.5em;
+  background-color: var(--secondary-background-color);
+  margin: 0.5em;
+  width: 1.5em;
+  border-radius: 50%;
+}
+
+.social-media-icon:hover {
+  background-color: var(--main-color);
 }
 
 footer {
@@ -208,10 +241,13 @@ footer ul {
   list-style: none;
 }
 
+footer li {
+  padding: 0.5em;
+}
+
 footer a {
   color: var(--secondary-text-color);
   text-decoration: none;
-  padding: 0.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -256,6 +292,28 @@ footer a {
 
   .notification-offer {
     max-width: 25em;
+  }
+
+  .contacts-list {
+    flex-wrap: nowrap;
+    max-width: 80%;
+    overflow-x: scroll;
+  }
+
+  .contacts-list::before {
+    display: block;
+    content: '';
+    width: 3em;
+    height: 3em;
+    background-image: linear-gradient(to right, white 100%, transparent 0%);
+  }
+
+  .contacts-list::after {
+    display: block;
+    content: '';
+    width: 3em;
+    height: 3em;
+    background-image: linear-gradient(to left, white 100%, transparent 0%);
   }
 
   footer ul {
