@@ -1,2 +1,8 @@
-# notify-test
-Notify, a technical test to showcase your app
+# Notify-test
+
+A great new frew psd theme to showcase your new application.
+
+
+## Mentions
+
+Icons from (icons8)[https://icons8.com]
