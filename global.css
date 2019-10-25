@@ -4,7 +4,12 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
   --main-color: hsl(145, 64%, 49%);
   --secondary-text-color: hsl(0, 0%, 60%);
+  --secondary-background-color: hsl(0, 0%, 89%);
   font-size: 0.9em;
+}
+
+h2 {
+  font-weight: normal;
 }
 
 .mobile {
@@ -65,11 +70,14 @@ html {
   opacity: 1;
 }
 
+.section {
+  padding: 1em;
+}
+
 .notify-bullets-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em 0;
 }
 
 .notify-bullet {
@@ -95,7 +103,7 @@ html {
   background-color: var(--main-color);
   padding: 1em;
   border-radius: 50%;
-  height: 2em;
+  height: 2.5em;
 }
 
 .notify-bullet-description {
@@ -104,8 +112,7 @@ html {
 }
 
 .notify-notifications {
-  background-color: hsl(0, 0%, 89%);
-  padding: 1em;
+  background-color: var(--secondary-background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,10 +120,10 @@ html {
 
 .notification-offer {
   padding: 2em;
+  max-width: 25em;
 }
 
 .notification-offer h2 {
-  font-weight: normal;
   margin-top: 0;
 }
 
@@ -128,7 +135,7 @@ html {
 .email-input {
   margin-top: 1.5em;
   display: flex;
-  --input-height: 40px;
+  --input-height: 35px;
 }
 
 .email-input input{
@@ -161,7 +168,37 @@ html {
   border-radius: 1em;
   width: 100%;
   max-width: 25em;
-  box-sizing: border-box;
+}
+
+.notify-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notify-contact span {
+  color: var(--secondary-text-color);
+  padding: 1em;
+  display: block;
+  text-align: center;
+}
+
+.contact-description-text {
+  font-style: italic;
+  max-width: 50em;
+}
+
+footer {
+  background-color: var(--secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  padding: 0.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -196,7 +233,7 @@ html {
   .notify-bullet {
     padding: 2em;
     margin: 0;
-    width: 15em;
+    width: 16em;
   }
 
   .notify-notifications {
@@ -206,5 +243,14 @@ html {
 
   .notification-offer {
     max-width: 25em;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: center;;
+  }
+
+  footer.section {
+    padding: 2em;
   }
 }
