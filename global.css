@@ -20,7 +20,7 @@ h2 {
   display: none;
 }
 
-.notify-introduction-container {
+header {
   background: url('assets/header-background.png');
   background-size: cover;
   display: flex;
@@ -70,7 +70,8 @@ h2 {
   opacity: 1;
 }
 
-.section {
+section,
+footer {
   padding: 1em;
 }
 
@@ -260,7 +261,7 @@ footer a {
     display: block;
   }
 
-  .notify-introduction-container {
+  header {
     height: 25em;
     justify-content: center;
   }
@@ -326,7 +327,7 @@ footer a {
     padding: 0 1em;
   }
 
-  footer.section {
+  footer {
     padding: 2em;
   }
 }
