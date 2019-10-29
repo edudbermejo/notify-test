@@ -20,7 +20,7 @@ h2 {
   display: none;
 }
 
-.notify-introduction-container {
+header {
   background: url('assets/header-background.png');
   background-size: cover;
   display: flex;
@@ -38,7 +38,7 @@ h2 {
   width: 8em;
 }
 
-.notify-introduction span {
+.notify-introduction p {
   color: white;
   display: block;
   margin: 0.5em 0 1em;
@@ -70,7 +70,8 @@ h2 {
   opacity: 1;
 }
 
-.section {
+section,
+footer {
   padding: 1em;
 }
 
@@ -176,7 +177,7 @@ h2 {
   align-items: center;
 }
 
-.notify-contact span {
+.notify-contact p {
   color: var(--secondary-text-color);
   padding: 1em;
   display: block;
@@ -234,19 +235,14 @@ footer {
   background-color: var(--secondary-background-color);
 }
 
-footer ul {
+footer nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style: none;
-  padding-left: 0;
-}
-
-footer li {
-  padding: 0.5em;
 }
 
 footer a {
+  padding: 0.5em;
   color: var(--secondary-text-color);
   text-decoration: none;
 }
@@ -260,7 +256,7 @@ footer a {
     display: block;
   }
 
-  .notify-introduction-container {
+  header {
     height: 25em;
     justify-content: center;
   }
@@ -317,7 +313,11 @@ footer a {
     background-image: linear-gradient(to left, white 100%, transparent 0%);
   }
 
-  footer ul {
+  .contact-image:hover {
+    filter: hue-rotate(50deg);
+  }
+
+  footer nav {
     flex-direction: row;
     justify-content: center;;
   }
@@ -326,7 +326,7 @@ footer a {
     padding: 0 1em;
   }
 
-  footer.section {
+  footer {
     padding: 2em;
   }
 }
