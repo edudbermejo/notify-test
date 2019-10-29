@@ -313,6 +313,10 @@ footer a {
     background-image: linear-gradient(to left, white 100%, transparent 0%);
   }
 
+  .contact-image:hover {
+    filter: hue-rotate(50deg);
+  }
+
   footer nav {
     flex-direction: row;
     justify-content: center;;
