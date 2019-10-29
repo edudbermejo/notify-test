@@ -235,19 +235,14 @@ footer {
   background-color: var(--secondary-background-color);
 }
 
-footer ul {
+footer nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style: none;
-  padding-left: 0;
-}
-
-footer li {
-  padding: 0.5em;
 }
 
 footer a {
+  padding: 0.5em;
   color: var(--secondary-text-color);
   text-decoration: none;
 }
@@ -318,7 +313,7 @@ footer a {
     background-image: linear-gradient(to left, white 100%, transparent 0%);
   }
 
-  footer ul {
+  footer nav {
     flex-direction: row;
     justify-content: center;;
   }
