@@ -38,7 +38,7 @@ header {
   width: 8em;
 }
 
-.notify-introduction span {
+.notify-introduction p {
   color: white;
   display: block;
   margin: 0.5em 0 1em;
@@ -177,7 +177,7 @@ footer {
   align-items: center;
 }
 
-.notify-contact span {
+.notify-contact p {
   color: var(--secondary-text-color);
   padding: 1em;
   display: block;
